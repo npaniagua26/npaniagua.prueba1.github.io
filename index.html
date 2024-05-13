@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principios Usabilidad</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        #fondo{
+            background-image: url("img/fondo.jpg");
+            background-repeat: repeat;
+            background-color: aqua;
+            background-position: center;
+            background-size: cover;
+        }
+        </style>
+
+</head>
+<!-- https://developers.google.com/fonts/docs/material_icons?hl=es-419 -->
+
+<!-- https://unsplash.com/es/s/fotos/paper-texture -->
+<body id="fondo">
+    <header>
+        <h1>Los 10 Principios de Usabilidad de Jakob Nielsen</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#visibilidad">Visibilidad del estado del sistema</a></li>
+            <li><a href="#relacion">Relación entre el sistema y el mundo real</a></li>
+            <li><a href="#control">Control y libertad del usuario</a></li>
+            <li><a href="#consistencia">Consistencia y estándares</a></li>
+            <li><a href="#prevencion">Prevención de errores</a></li>
+            <li><a href="#reconocimiento">Reconocimiento antes que recuerdo</a></li>
+            <li><a href="#flexibilidad">Flexibilidad y eficiencia de uso</a></li>
+            <li><a href="#minimalismo">Diseño estético y minimalista</a></li>
+            <li><a href="#ayudar">Ayudar a los usuarios a reconocer, diagnosticar y recuperarse de errores</a></li>
+            <li><a href="#ayuda">Ayuda y documentación</a></li>
+        </ul>
+    </nav>
+    <main>
+         <!-- https://www.youtube.com/watch?v=IYrKEu3qoJI -->
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/IYrKEu3qoJI?si=Q4EaAp72m9Q1fU7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           
+        <section id="visibilidad">
+            <article>
+                <h2>1. Visibilidad del estado del sistema</h2>
+                <p><b>El diseño siempre debe mantener informados a los usuarios sobre lo que está sucediendo, a través
+                        de comentarios adecuados dentro de un período de tiempo razonable.</b></p>
+                <blockquote>
+                    <p>Cuando los usuarios conocen el estado actual del sistema, conocen el resultado de sus
+                        interacciones anteriores y determinan los próximos pasos. Las interacciones predecibles crean
+                        confianza tanto en el producto como en la marca.</p>
+                    <footer>Fuente:
+                        <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">
+                            10 Usability Heuristics for User Interface Design
+                        </a>
+                    </footer>
+                </blockquote>
+
+                <a href="https://www.nngroup.com/videos/usability-heuristic-system-status/">Vídeo de 3 minutos sobre la
+                    heurística de la visibilidad</a>
+            </article>
+            <figure>
+                <img alt="Heurística de usabilidad 1: Hombre justo a 'Estas aquí' en un mapa"
+                    src="https://media.nngroup.com/media/editor/2020/11/05/heuristic-example-1-rbg-73.png" width="450"
+                    height="300" />
+                <figcaption>'Está aquí' en los mapas del centro comercial se muestra a las personas dónde se encuentran
+                    actualmente, para ayudarles a comprender adónde ir a continuación </figcaption>
+            </figure>
+            
+            <a href="./principio1.html">Ver más</a>
+
+            <hr>
+        </section>
+
+        <section id="relacion">
+            <img src="./img/principio2.jpg" alt="Error 404 Página no encontrada de Lego" width="500" height="300" />
+            <article>
+                <h2>2. Relación entre el sistema y el mundo real</h2>
+                <p>El sistema debe hablar el lenguaje de los usuarios, con palabras, frases y conceptos familiares al
+                    usuario, en lugar de términos orientados al sistema. Sigue convenciones del mundo real, haciendo que
+                    la información aparezca en un orden natural y lógico.</p>
+            </article>
+            <hr>
+        </section>
+
+        <section id="control">
+            <article>
+                <h2>3. Control y libertad del usuario</h2>
+                <p>Los usuarios a menudo eligen funciones del sistema por error y necesitarán una salida clara marcada
+                    para dejar la parte no deseada del sistema sin tener que pasar por un proceso extenso.</p>
+            </article>
+            <article>
+                <h3>Ejemplos</h3>
+                <ol>
+                    <li>Aplicar y borrar filtros al comprar productos</li>
+                    </li>Deshacer una acción de guardado en Pinterest.</li>
+                    <li>Quitar elementos de un carrito de compras.</li>
+                </ol>
+            </article>
+            <hr>
+        </section>
+
+        <section id="consistencia">            
+            <article>
+                <h2>4. Consistencia y estándares</h2>
+                <p>Los usuarios no deberían tener que preguntarse si diferentes palabras, situaciones o acciones
+                    significan lo mismo. Sigue las convenciones de la plataforma.</p>
+            </article>
+
+            <dl>
+                <dt>Forma estándar</dt>
+                <dd>Mantener la forma de los botones</dd>
+                <dt>Iconos consistentes
+                    <span class="material-icons">
+                        menu
+                    </span>
+                    <span class="material-icons">
+                        search
+                    </span>
+                </dt>
+                <dd>Utilizar los iconos como son reconocidos en la mayoría de aplicaciones</dd>
+            </dl>
+            <hr>
+        </section>
+
+        <section id="prevencion">
+            <article>
+                <h2>5. Prevención de errores</h2>
+                <p>Aún mejor que buenos mensajes de error es un diseño cuidadoso que prevenga la ocurrencia de
+                    problemas.</p>
+                <table>
+                    <caption>Resbalones (Slips)</caption>
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Ejemplo</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sistema Operativo</td>
+                            <td>Papelera de reciclaje de Microsoft</td>
+                            <td>Si el usuario eliminó uno de los archivos importantes rápidamente mientras eliminaba los
+                                archivos no importantes, Microsoft ofrece la posibilidad de restaurar o recuperar el
+                                archivo eliminado de la papelera de reciclaje cómodamente</td>
+                        </tr>
+                        <tr>
+                            <td>Sitio Web</td>
+                            <td>Gmail: Eliminar correos</td>
+                            <td>
+                                <p>En Gmail, si el usuario eliminó un correo electrónico importante por error, puede
+                                deshacer esa acción simplemente haciendo clic en el botón de acción <i>"Deshacer"</i> de la
+                                barra de bocadillos en la esquina inferior izquierda.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Slips:</td>
+                            <td colspan="2"><em>Los deslices son el tipo de errores que generalmente cometen los usuarios
+                                expertos.</em></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <h4>Errores</h4>
+                <table>
+                    <tr>
+                        <td rowspan="3">
+                            Los <mark>errores</mark> son el tipo de errores que generalmente cometen los usuarios que tienen
+                            información incompleta sobre la tarea o cualquier evento y la falta de coincidencia del
+                            modelo mental.
+                        </td>
+                        <th>Tipo</th>
+                        <th>Ejemplo</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>Sistema Operativo</td>
+                        <td>Papelera de reciclaje de Microsoft</td>
+                        <td>Microsoft confirma al usuario sobre la acción destructiva de eliminar los archivos de forma
+                            permanente. Los usuarios siempre deben solicitar confirmación para cualquier acción
+                            destructiva o importante</td>
+                    </tr>
+                    <tr>
+                        <td>Sitio Web</td>
+                        <td>Exito e-commerce</td>
+                        <td>Mientras crea la contraseña para el sitio web de comercio electrónico Éxito durante la etapa
+                            de registro, el sistema guía al usuario indicándole cuál debe ser la combinación para crear
+                            una contraseña segura.</td>
+                    </tr>
+                </table>
+            </article> 
+            <hr>
+        </section>
+
+        <section id="reconocimiento">
+            <article>
+                <h2>6. Reconocimiento antes que recuerdo</h2>
+                <p>Minimiza la carga de la memoria del usuario haciendo objetos, acciones y opciones visibles. El
+                    usuario no debería tener que recordar información de una parte del diálogo a otra.</p>
+                    
+            </article>
+            <hr>
+        </section>
+
+        <section id="flexibilidad">
+            <article>
+                <h2>7. Flexibilidad y eficiencia de uso</h2>
+                <p>Los aceleradores —que son invisibles para el usuario novato— pueden a menudo aumentar la velocidad de
+                    uso del sistema para el usuario experto de tal manera que el sistema pueda acomodar a ambos usuarios
+                    novatos y expertos. Permite a los usuarios adaptar acciones frecuentes.</p>
+            </article>
+            <hr>
+        </section>
+
+        <section id="minimalismo">
+            <article>
+                <h2>8. Diseño estético y minimalista</h2>
+                <p>Los diálogos no deberían contener información que es irrelevante o raramente necesitada. Cada unidad
+                    extra de información en un diálogo compite con las unidades de información relevantes y disminuye su
+                    visibilidad relativa.</p>
+            </article>
+            <hr>
+        </section>
+
+        <section id="ayudar">
+            <article>
+                <h2>9. Ayudar a los usuarios a reconocer, diagnosticar y recuperarse de errores</h2>
+                <p>Los mensajes de error deberían ser expresados en lenguaje llano (sin códigos), indicar precisamente
+                    el problema y sugerir constructivamente una solución.</p>
+            </article>
+            <hr>
+        </section>
+
+        <section id="ayuda">
+            <article>
+                <h2>10. Ayuda y documentación</h2>
+                <p>Aunque es mejor si el sistema puede ser utilizado sin documentación, puede ser necesario proporcionar
+                    ayuda y documentación. Cualquier información de ayuda debería ser fácil de buscar, enfocada en la
+                    tarea del usuario, listar pasos concretos para llevar a cabo y no ser demasiado extensa.</p>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <h2>Más sobre Usabilidad</h2>
+        <p>La usabilidad es clave para una experiencia de usuario efectiva, asegurando que los sistemas sean accesibles
+            y fáciles de usar.</p>
+    </aside>
+
+
+    <footer>
+        <p>© 2024, Derechos Reservados <small>ISW-512 Diseño de Aplicaciones Web</small></p>
+        
+    </footer>
+</body>
+
+</html>
