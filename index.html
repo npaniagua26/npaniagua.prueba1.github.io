@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principios Usabilidad</title>
-   
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdOCbcqAAAAAI7XQzQoeDsC3Ik_Tz8rqeLLpt-b"></script>
 </head>
 <body id="fondo">
     <header>
@@ -118,6 +118,20 @@
                     tarea del usuario, listar pasos concretos para llevar a cabo y no ser demasiado extensa.</p>
             </article>
         </section>
+        <div class="container mt-5">
+    <h2>Formulario con reCAPTCHA</h2>
+    <form id="captchaForm">
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo" required>
+      </div>
+      <div class="mb-3">
+        <div class="g-recaptcha" data-sitekey="TU_CLAVE_DEL_SITIO"></div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <div id="captchaError" class="text-danger mt-3" style="display: none;">Por favor, verifica el reCAPTCHA.</div>
+  </div>
     </main>
     <aside>
         <h2>Más sobre Usabilidad</h2>
@@ -130,6 +144,25 @@
         <p>© 2024, Derechos Reservados <small>ISW-512 Diseño de Aplicaciones Web</small></p>
         
     </footer>
+   <script>
+    document.getElementById("captchaForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Validar si se resolvió el reCAPTCHA
+      const captchaResponse = grecaptcha.getResponse();
+      if (!captchaResponse) {
+        document.getElementById("captchaError").style.display = "block";
+      } else {
+        document.getElementById("captchaError").style.display = "none";
+
+        // Aquí puedes enviar el formulario al servidor
+        console.log("Formulario válido. CAPTCHA resuelto.");
+        alert("Formulario enviado correctamente.");
+        // Ejemplo de envío con fetch:
+        // fetch('/ruta-del-servidor', { method: 'POST', body: new FormData(e.target) });
+      }
+    });
+  </script>
 </body>
 
 </html>
