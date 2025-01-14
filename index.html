@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principios Usabilidad</title>
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdOCbcqAAAAAI7XQzQoeDsC3Ik_Tz8rqeLLpt-b"></script>
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body id="fondo">
     <header>
@@ -147,7 +148,9 @@
    <script>
     document.getElementById("captchaForm").addEventListener("submit", function (e) {
       e.preventDefault();
-
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LdOCbcqAAAAAI7XQzQoeDsC3Ik_Tz8rqeLLpt-b', {action: 'LOGIN'});
+    });
       // Validar si se resolvió el reCAPTCHA
       const captchaResponse = grecaptcha.getResponse();
       if (!captchaResponse) {
