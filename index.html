@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principios Usabilidad</title>
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdOCbcqAAAAAI7XQzQoeDsC3Ik_Tz8rqeLLpt-b"></script>
-      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body id="fondo">
     <header>
@@ -127,7 +126,12 @@
         <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo" required>
       </div>
       <div class="mb-3">
-        <div class="g-recaptcha" data-sitekey="TU_CLAVE_DEL_SITIO"></div>
+       <button class="g-recaptcha"
+    data-sitekey="6LdOCbcqAAAAAI7XQzQoeDsC3Ik_Tz8rqeLLpt-b"
+    data-callback='onSubmit'
+    data-action='submit'>
+  Submit
+</button>
       </div>
       <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
