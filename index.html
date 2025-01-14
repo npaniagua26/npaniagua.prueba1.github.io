@@ -154,9 +154,8 @@
       e.preventDefault();
     grecaptcha.enterprise.ready(async () => {
       const token = await grecaptcha.enterprise.execute('6LdOCbcqAAAAAI7XQzQoeDsC3Ik_Tz8rqeLLpt-b', {action: 'LOGIN'});
-        // Validar si se resolvió el reCAPTCHA
-      const captchaResponse = grecaptcha.getResponse();
-      if (!captchaResponse) {
+        
+      if (!token) {
         document.getElementById("captchaError").style.display = "block";
       } else {
         document.getElementById("captchaError").style.display = "none";
