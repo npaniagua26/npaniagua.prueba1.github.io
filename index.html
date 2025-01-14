@@ -150,8 +150,7 @@
       e.preventDefault();
     grecaptcha.enterprise.ready(async () => {
       const token = await grecaptcha.enterprise.execute('6LdOCbcqAAAAAI7XQzQoeDsC3Ik_Tz8rqeLLpt-b', {action: 'LOGIN'});
-    });
-      // Validar si se resolvió el reCAPTCHA
+        // Validar si se resolvió el reCAPTCHA
       const captchaResponse = grecaptcha.getResponse();
       if (!captchaResponse) {
         document.getElementById("captchaError").style.display = "block";
@@ -164,6 +163,8 @@
         // Ejemplo de envío con fetch:
         // fetch('/ruta-del-servidor', { method: 'POST', body: new FormData(e.target) });
       }
+    });
+      
     });
   </script>
 </body>
